@@ -1,13 +1,12 @@
 name: Generic
 description: A generic issue
 labels: []
-title: ""
+title: "[ISSUE]: "
 body:
   - type: markdown
     attributes:
       value: |
         Please make sure this is not a duplicate by looking through other open/closed issues
-  
   - type: textarea
     id: description
     attributes:
