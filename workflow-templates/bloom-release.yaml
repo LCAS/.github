@@ -6,8 +6,8 @@ on:
 
 jobs:
   bloom-release:
-    if: startsWith(github.repository_owner, "LCAS")
-    uses: LCAS/docker-dpkg-build/.github/workflows/bloom-release.yaml
+    if: github.repository_owner == "LCAS"
+    uses: LCAS/docker-dpkg-build/.github/workflows/bloom-release.yaml@main
     with:
       ros_distro: humble
       track: humble
