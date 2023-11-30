@@ -1,0 +1,11 @@
+{
+    "name": "L-CAS ROS CI workflow",
+    "description": "A simple ROS Continuous Integration workflow for L-CAS ROS repositories.",
+    "iconName": "pulse",
+    "categories": [
+        "ROS"
+    ],
+    "filePatterns": [
+        "**/package.xml"
+    ]
+}
