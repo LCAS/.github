@@ -2,6 +2,7 @@ name: ros CI
 
 on:
   push:
+    # you may want to configure the branches that this should be run on here.
     branches: [ $default-branch ]
   pull_request:
     branches: [ $default-branch ]
@@ -11,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # configure your ROS distribution you want to test against here
         ros_distribution:
-          #- noetic
+          # - noetic (an example of ROS1)
           - humble
 
         # Define the Docker image(s) associated with each ROS distribution.
