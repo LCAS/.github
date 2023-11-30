@@ -1,0 +1,10 @@
+{
+    "name": "L-CAS Bloom Release Workflow",
+    "description": "Use to automatically trigger a new bloom release once a release is prepared with catkin_prepare_release.",
+    "categories": [
+        "ROS"
+    ],
+    "filePatterns": [
+        "**/package.xml"
+    ]
+}
