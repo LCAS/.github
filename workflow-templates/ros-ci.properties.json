@@ -4,8 +4,5 @@
     "iconName": "pulse",
     "categories": [
         "ROS"
-    ],
-    "filePatterns": [
-        "**/package.xml"
     ]
 }
