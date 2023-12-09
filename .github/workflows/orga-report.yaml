@@ -1,4 +1,4 @@
-Name: Log @LCAS organization statistics
+name: Log @LCAS organization statistics
 on:
   workflow_dispatch:
   #schedule:
@@ -9,13 +9,13 @@ jobs:
   logStats:
     runs-on: ubuntu-latest
     steps:
-      - uses: gr2m/org-stats-action@v1.x
-        id: stats
-        with:
-          org: LCAS
-        env:
-          GITHUB_TOKEN: ${{ secrets.ORGA_GH_TOKEN }}
-      - run: |
-          cat << EOF
-          result: ${{ steps.stats.outputs.data }}
-          EOF
+    - uses: gr2m/org-stats-action@v1.x
+      id: stats
+      with:
+        org: LCAS
+      env:
+        GITHUB_TOKEN: ${{ secrets.ORGA_GH_TOKEN }}
+    - run: |
+        cat << EOF
+        result: ${{ steps.stats.outputs.data }}
+        EOF
